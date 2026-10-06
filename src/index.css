@@ -1,0 +1,30 @@
+:root {
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  color: #1f2937;
+  background: #f3f4f6;
+}
+body { margin: 0; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+h1 { margin: 0 0 8px; font-size: 1.6rem; }
+h2 { margin: 0 0 12px; font-size: 1.15rem; }
+.muted { color: #6b7280; font-size: 0.9rem; }
+.error { color: #b91c1c; }
+.tabs { display: flex; gap: 8px; margin: 16px 0 24px; flex-wrap: wrap; }
+.tabs button {
+  padding: 8px 16px; border: 1px solid #d1d5db; border-radius: 8px;
+  background: white; cursor: pointer; font-size: 0.95rem;
+}
+.tabs button.active { background: #2563eb; color: white; border-color: #2563eb; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.card {
+  background: white; border-radius: 12px; padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.card input[type='text'], .card input:not([type]) {
+  width: 100%; box-sizing: border-box; padding: 8px 10px;
+  border: 1px solid #d1d5db; border-radius: 6px; font-size: 0.95rem;
+}
+.check { display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.9rem; }
+ul { padding-left: 18px; max-height: 360px; overflow: auto; }
+li { margin: 6px 0; font-size: 0.92rem; }
+li.done { text-decoration: line-through; color: #9ca3af; }
